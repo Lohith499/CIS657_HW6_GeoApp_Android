@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Geo Location</string>
+    <string name="distancemetric">Kilometers</string>
+    <string name="bearingmetirc">Degress</string>
+
+    <string-array name="dunitdropdown">
+        <item>Kilometers</item>
+        <item>Miles</item>
+    </string-array>
+
+    <string-array name="bunitdropdown">
+        <item>Degrees</item>
+        <item>Mils</item>
+    </string-array>
+</resources>
