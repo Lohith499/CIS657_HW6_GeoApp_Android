@@ -18,7 +18,7 @@ import java.util.Set;
 public class Settings extends AppCompatActivity {
     ImageView imgClick;
     Spinner dspinner,bspinner;
-    String ddrop, bdrop;
+    String ddrop, bdrop, s;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +37,14 @@ public class Settings extends AppCompatActivity {
         }else
         {
             bdrop= "Degrees";
+        }
+        if (intentcheck.hasExtra("coordindate")){
+
+            s=getIntent().getStringExtra("coordindate");
+
+        } else
+        {
+            s ="";
         }
 
 
@@ -76,6 +84,7 @@ public class Settings extends AppCompatActivity {
                 String bselected = bspinner.getSelectedItem().toString();
                 intent1.putExtra("dselected", dselected);
                 intent1.putExtra("bselected", bselected);
+                intent1.putExtra("coordindate", s);
                 startActivity(intent1);
             }
         });
