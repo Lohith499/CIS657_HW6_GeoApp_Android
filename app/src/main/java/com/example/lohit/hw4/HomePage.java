@@ -1,5 +1,5 @@
 /**
- * Created by Lohith and Brain CIS
+ * Created by Lohith and Brain
  */
 
 package com.example.lohit.hw4;
